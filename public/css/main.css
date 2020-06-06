@@ -1,0 +1,134 @@
+/*============================================ 
+===============start general part ============
+============================================ */
+body{
+    padding-top: 55px;
+}
+h4{
+    font-family: 'Anton', sans-serif;
+}
+h3{
+    font-size: 36px;
+    font-family: 'Anton', sans-serif;
+}
+p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+}
+hr{
+    border:2px solid #3490DC;
+}
+/*============================================ 
+===============start Navbar part =============
+============================================ */
+#navbarSupportedContent{
+    font-size: 16px;
+}
+
+/*============================================ 
+===============start intro part ==============
+============================================ */
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-attachment: scroll;
+    overflow: hidden;
+}
+.videoContainer video {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.videoContainer .overlay {
+    height: 99%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    background: rgba(0, 0, 0, .5);
+}
+.videoContainer .content_intro{
+    z-index: 3;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+.videoContainer .content_intro .row:first-of-type{
+    margin-bottom: 20px;
+}
+
+/*============================================ 
+===============start tabs part ===============
+============================================ */
+#tabs{
+    padding:40px;
+}
+
+#tabs p{
+    padding-bottom: 10px;
+}
+
+#tabs .nav-pills{
+    padding:40px;
+}
+
+#tabs .nav-link{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 22px;
+}
+
+#tabs .course{
+    padding:40px;
+    background:#f1f1f1;
+    margin:20px 0px;
+    max-width: 31%;
+    margin-right:15px;
+}
+
+#tabs .course img{
+    margin-bottom: 15px;
+}
+
+#tabs .course h4{
+    margin-bottom: 15px;
+}
+
+/*============================================ 
+===============start services part ===========
+============================================ */
+#services{
+    background: #f1f1f1;
+    padding:40px;
+}
+
+#services .row:first-of-type div{
+    padding:15px;
+}
+
+/*============================================ 
+===============start media part ==============
+============================================ */
+
+@media screen and (max-width:768px){
+    .videoContainer .content_intro{
+        top: 5%;
+    }
+    .videoContainer .overlay{
+        height: 98%;
+    }
+    .videoContainer .content_intro h4{
+        margin-top:7px;
+    }
+    .videoContainer .content_intro input{
+        margin-top:7px;
+    }
+    .videoContainer .content_intro .btn-primary{
+        margin-top:7px;
+    }
+    #tabs .course{
+        max-width: 100%;
+    }
+}
