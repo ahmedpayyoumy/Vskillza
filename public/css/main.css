@@ -104,8 +104,125 @@ hr{
     padding:40px;
 }
 
-#services .row:first-of-type div{
+#services .service{
     padding:15px;
+    border-bottom: 1px solid #3490DC;
+}
+
+#services .service{
+    border:1px solid #3490DC;
+}
+
+#services .service:hover{
+    background: #333;
+    color:#FFF;
+    transition: .02s all ease-in-out;
+}
+
+#services i{
+    color:#3490DC;
+    font-size: 30px;
+}
+
+/*============================================ 
+===============start Blog part ===============
+============================================ */
+#blog{
+    padding:50px 0px;
+}
+
+#blog .article{
+    margin-top: 25px;
+    border:1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+#blog .article h4{
+    padding:20px;
+}
+
+#blog .article p{
+    padding:20px;
+}
+
+#blog .article span{
+    padding-bottom:20px;
+    font-size: 11px;
+    color: #777;
+}
+
+/*============================================ 
+===============start Clients part ============
+============================================ */
+#clients{
+    background: #f1f1f1;
+    padding:50px 0px;
+}
+
+#clients hr{
+    margin-bottom: 50px;
+}
+/*============================================ 
+===============start Partners part ===========
+============================================ */
+#partners{
+    padding:50px 0px;
+}
+
+#partners hr{
+    margin-bottom: 50px;
+}
+
+#partners .partner{
+    margin-top: 20px;
+}
+/*============================================ 
+===============start Subscribe part ==========
+============================================ */
+#subscribe{
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    padding:50px 0px;
+    background: url('../images/contact.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#subscribe h3{
+    color:#FFF;
+}
+/*============================================ 
+===============start Footer part =============
+============================================ */
+footer{
+    padding:50px 0px;
+    background:#333;
+    color:#FFF;
+}
+
+footer i{
+    font-size: 30px;
+    color:#3490DC;
+}
+
+footer span{
+    color: #3490DC;
+}
+
+footer .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+footer .part{
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer .social li{
+    margin-right: 20px;
 }
 
 /*============================================ 
