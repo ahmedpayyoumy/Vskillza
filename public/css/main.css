@@ -201,6 +201,18 @@ footer{
     color:#FFF;
 }
 
+.fa-twitter-square{
+    color: #2CAAE1;
+}
+
+.fa-facebook{
+    color: #3B579D;
+}
+
+.fa-youtube{
+    color: #FF0000;
+}
+
 footer i{
     font-size: 30px;
     color:#3490DC;

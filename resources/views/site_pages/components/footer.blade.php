@@ -2,7 +2,7 @@
 <section id="clients">
     <div class="container">
         <h3 class="text-center">Our Clients</h3><hr width="30%" align="center">
-        <div class="owl-carousel owl-theme ">
+        <div class="owl-carousel owl-theme">
 
             <div class="item"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
             <div class="item"><img src="{{ asset('images/wa.png') }}" class="img img-fluid"></div>
@@ -22,21 +22,20 @@
 <!-- start partners part -->
 <section id="partners">
     <div class="container">
-        <div class="row">
-            <div class="col-12"><h3 class="text-center">Our Partners</h3><hr align="center" width="30%"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-            <div class="col-md-2 col-6 partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
-
+        <div class="col-12"><h3 class="text-center">Our Partners</h3><hr align="center" width="30%"></div>
+        <div class="owl-carousel owl-theme">
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
+            <div class="item partner"><img src="{{ asset('images/fb.png') }}" class="img img-fluid"></div>
         </div>
     </div>
 </section>
@@ -46,10 +45,10 @@
 <!-- start subscribe part -->
 <section id="subscribe">
     <div class="container">
-        <h3 class="text-center">Subscribe to Newsletter</h3><hr align="center" width="30%">
         <div class="row">
 
-            <div class="col-md-6 offset-md-3">
+            <div class="col-md-6">
+                <h3 class="text-center">Subscribe to Newsletter</h3><hr align="center" width="30%">
                 <form action="#" method="POST">
                     <div class="form-group">
                         <input type="text" placeholder="Your Name" class="form-control">
@@ -69,6 +68,21 @@
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Subscribe" class="btn btn-primary btn-block">
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="text-center">Contact Us</h3><hr align="center" width="30%">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="" cols="16" rows="3" class="form-control" placeholder="Leave Your Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-danger btn-block">
                     </div>
                 </form>
             </div>

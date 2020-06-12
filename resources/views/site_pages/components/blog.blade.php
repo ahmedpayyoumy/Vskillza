@@ -9,9 +9,9 @@
             </div>
         </div>
 
-        <div class="row carousel-inner" align="center">
+        <div class="owl-carousel blogCarousel" align="center">
 
-            <div class="col-md-4 item active">
+            <div class="item">
                 <div class="article">
                     <div class="row">
                         <div class="col-12"><img src="{{ asset('images/blog1.jpg')}}" class="img img-fluid"></div>
@@ -30,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="item">
                 <div class="article">
                     <div class="row">
                         <div class="col-12"><img src="{{ asset('images/blog1.jpg')}}" class="img img-fluid"></div>
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="item">
                 <div class="article">
                     <div class="row">
                         <div class="col-12"><img src="{{ asset('images/blog1.jpg')}}" class="img img-fluid"></div>

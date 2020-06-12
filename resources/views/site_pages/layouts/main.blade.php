@@ -22,8 +22,6 @@
 
     @include('site_pages.components.tabs')
 
-    @include('site_pages.components.services')
-
     @include('site_pages.components.blog')
 
     @include('site_pages.components.footer')
