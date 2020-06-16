@@ -12,20 +12,11 @@
     <link rel="stylesheet" href="{{ asset('css/select.css') }}">
     <link rel="stylesheet" href="{{ asset('css/intlTelInput.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <title>Vskillza</title>
+    <title>Vskillza | {{$data['title']}}</title>
 </head>
 <body>
     
-    @include('site_pages.components.header')
-
-    @include('site_pages.components.intro')
-
-    @include('site_pages.components.tabs')
-
-    @include('site_pages.components.blog')
-
-    @include('site_pages.components.footer')
-
+    @yield('content')
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="{{ asset('js/owl.carousel.min.js')}}"></script>

@@ -2,10 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('site_pages.index');
-});
+Route::get('/','site\pagesController@index');
+Route::get('/about','site\pagesController@about')->name('aboutPage');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+

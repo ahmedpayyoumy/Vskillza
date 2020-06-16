@@ -18,11 +18,18 @@ p{
 hr{
     border:2px solid #3490DC;
 }
+.vskillza{
+    color:#3490DC;
+}
 /*============================================ 
 ===============start Navbar part =============
 ============================================ */
 #navbarSupportedContent{
     font-size: 16px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:#FFF;
 }
 
 /*============================================ 
@@ -237,6 +244,17 @@ footer .social li{
     margin-right: 20px;
 }
 
+footer .footer_nav{
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer_nav li a{
+    font-size: 20px;
+    color: #3490DC;
+    margin-left:10px; 
+}
+
 /*============================================ 
 ===============start media part ==============
 ============================================ */
@@ -259,5 +277,9 @@ footer .social li{
     }
     #tabs .course{
         max-width: 100%;
+    }
+    footer .footer_nav{
+        display: block;
+        text-align: center;
     }
 }

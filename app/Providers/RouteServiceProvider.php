@@ -43,10 +43,17 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $this->mapApiRoutes();
+        $this->mapApiMasterAdminRoutes();
+        $this->mapWebCareerAdminRoutes();
+        $this->mapWebUniversityAdminRoutes();
+        $this->mapWebUserAdminRoutes();
 
         $this->mapWebRoutes();
+        $this->mapWebMasterAdminRoutes();
+        $this->mapApiCareerAdminRoutes();
+        $this->mapApiUniversityAdminRoutes();
+        $this->mapApiUserAdminRoutes();
 
-        //
     }
 
     /**
@@ -61,6 +68,70 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
             ->namespace($this->namespace)
             ->group(base_path('routes/web.php'));
+    }
+
+    /* master Admin Web Routes */
+    protected function mapWebMasterAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/master/web.php'));
+    }
+
+    /* user Admin Web Routes */
+    protected function mapWebUserAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/user/web.php'));
+    }
+
+    /* University Admin Web Routes */
+    protected function mapWebUniversityAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/university/web.php'));
+    }
+
+    /* career Admin Web Routes */
+    protected function mapWebCareerAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/career/web.php'));
+    }
+
+    /* master Admin API Routes */
+    protected function mapApiMasterAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/master/api.php'));
+    }
+
+    /* user Admin API Routes */
+    protected function mapApiUserAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/user/api.php'));
+    }
+
+    /* University Admin Api Routes */
+    protected function mapApiUniversityAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/university/api.php'));
+    }
+
+    /* career Admin API Routes */
+    protected function mapApiCareerAdminRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/career/api.php'));
     }
 
     /**
