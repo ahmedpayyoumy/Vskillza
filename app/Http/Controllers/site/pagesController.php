@@ -18,4 +18,10 @@ class pagesController extends Controller
     	$data['title'] = "About Page";
     	return view('site_pages.pages.about.about')->with('data',$data);
     }
+
+    //start terms & Conditions page
+    public function terms(){
+        $data['title'] = "Terms & Conditions Page";
+        return view('site_pages.pages.terms.terms')->with('data',$data);
+    }
 }

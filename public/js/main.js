@@ -65,4 +65,9 @@ $(document).ready( function(){
         }
     });
 
+    $('#reg').on('click',function(e){
+        e.preventDefault();
+        $('.register_modal').modal('show');
+    });
+
 });

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/select.css') }}">
     <link rel="stylesheet" href="{{ asset('css/intlTelInput.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <title>Vskillza | {{$data['title']}}</title>
+    <title>Vskillza | <?= (isset($data['title']))?$data['title']:'Login Page';?></title>
 </head>
 <body>
     
