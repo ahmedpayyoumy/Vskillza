@@ -27,10 +27,11 @@
                         <a class="nav-link" href="#">Join Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-success" href="{{ route('login') }}">Sign In</a>
+                        <a class="nav-link btn btn-success" data-toggle="modal" data-target="#loginModal">
+                        Sign In</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-default" data-toggle="modal" data-target="#exampleModalCenter">
+                        <a class="nav-link btn btn-primary" href="{{ route('registerPage') }}">
                           Register
                         </a>
                     </li>
@@ -43,4 +44,4 @@
 
 </section>
 
-@include('site_pages.pages.register.register')
+@include('site_pages.pages.login.login')

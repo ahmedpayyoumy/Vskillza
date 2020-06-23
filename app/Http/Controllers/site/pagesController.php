@@ -24,4 +24,10 @@ class pagesController extends Controller
         $data['title'] = "Terms & Conditions Page";
         return view('site_pages.pages.terms.terms')->with('data',$data);
     }
+
+    //start Register page
+    public function register(){
+        $data['title'] = "Register Page";
+        return view('site_pages.pages.register.register')->with('data',$data);
+    }
 }
